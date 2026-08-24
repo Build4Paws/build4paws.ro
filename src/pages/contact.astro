@@ -30,6 +30,20 @@ const channels = [
     href: "https://www.linkedin.com/company/build-4-paws",
     note: "Rămâi la curent.",
   },
+  {
+    icon: "lucide:facebook",
+    label: "Facebook",
+    value: "facebook.com/build4paws",
+    href: "https://www.facebook.com/build4paws/",
+    note: "Noutăți și campanii.",
+  },
+  {
+    icon: "lucide:instagram",
+    label: "Instagram",
+    value: "@build4paws",
+    href: "https://www.instagram.com/build4paws",
+    note: "Din culise.",
+  },
 ];
 
 const audiences = [
@@ -78,7 +92,7 @@ const audiences = [
   <!-- Canale -->
   <Section tone="default">
     <Container>
-      <div class="grid gap-6 md:grid-cols-3 mb-16">
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-16">
         {channels.map((c) => (
           <a
             href={c.href}
