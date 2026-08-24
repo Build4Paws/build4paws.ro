@@ -1,6 +1,6 @@
 # build4paws.ro
 
-Site-ul oficial al Asociației **Build 4 Paws** — tech NGO care construiește infrastructura software pentru bunăstarea animalelor în România.
+Site-ul oficial al Asociației **Build 4 Paws**, tech NGO care construiește infrastructura software pentru bunăstarea animalelor în România.
 
 ## Stack
 

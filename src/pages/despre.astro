@@ -46,24 +46,19 @@ const principles = [
 const founders = [
   {
     name: "Dragoș Gălățeanu",
-    role: "Fondator",
+    role: "Fondator · Produs",
     linkedin: "https://www.linkedin.com/in/dragosgalateanu/",
   },
   {
-    name: "Cosmin Coman",
-    role: "Fondator",
-    linkedin: "https://www.linkedin.com/in/cosmin-software-engineer/",
-  },
-  {
     name: "Tudor Samoilescu",
-    role: "Fondator",
+    role: "Fondator · Inginerie",
     linkedin: "https://www.linkedin.com/in/tudor-samoilescu-7034b4181/",
   },
 ];
 ---
 <BaseLayout
-  title="Despre — Build 4 Paws"
-  description="Tech NGO fondat de developeri, născut la intersecția dintre tehnologie și bunăstarea animalelor."
+  title="Despre | Build 4 Paws"
+  description="Tech NGO născut la intersecția dintre tehnologie și bunăstarea animalelor, fondat de oameni din produs și inginerie."
 >
   <!-- Hero -->
   <Section tone="navy" class="!pt-28 md:!pt-36 !pb-20">
@@ -71,7 +66,7 @@ const founders = [
       <div class="max-w-3xl">
         <p class="text-orange font-medium mb-6 uppercase tracking-wider text-sm">Despre noi</p>
         <h1 class="text-h1 !text-white mb-6">
-          Tech NGO, fondat de developeri.
+          Tech NGO, fondat de oameni din produs și inginerie.
         </h1>
         <p class="text-xl text-slate-300 leading-relaxed">
           Ne-am născut la intersecția dintre tehnologie și bunăstarea animalelor
@@ -106,14 +101,14 @@ const founders = [
     </Container>
   </Section>
 
-  <!-- ADN — 8 principii -->
+  <!-- ADN: 8 principii -->
   <Section tone="muted">
     <Container>
       <div class="mb-16 max-w-3xl">
         <p class="text-orange font-medium mb-4 uppercase tracking-wider text-sm">ADN-ul Build 4 Paws</p>
         <h2 class="text-h2 mb-6">Cum decidem ce construim.</h2>
         <p class="text-lg text-slate-600 leading-relaxed">
-          Opt principii de lucru. Nu sunt postere pe perete — sunt filtrul prin care
+          Opt principii de lucru. Nu sunt postere pe perete. Sunt filtrul prin care
           trec toate deciziile noastre.
         </p>
       </div>
@@ -143,11 +138,11 @@ const founders = [
         <p class="text-orange font-medium mb-4 uppercase tracking-wider text-sm">Fondatori</p>
         <h2 class="text-h2 mb-6">Cine suntem.</h2>
         <p class="text-lg text-slate-600 leading-relaxed">
-          Suntem developeri care au ales să folosim ce știm să facem cel mai bine —
-          să construim software — pentru o cauză care are nevoie de asta.
+          Oameni din produs și inginerie care au ales să folosească ce știu să facă cel mai bine,
+          să construiască software, pentru o cauză care are nevoie de asta.
         </p>
       </div>
-      <div class="grid gap-6 md:grid-cols-3">
+      <div class="grid gap-6 md:grid-cols-2 max-w-3xl">
         {founders.map((f) => (
           <Card class="!p-8 flex flex-col">
             <div class="w-12 h-12 rounded-full bg-navy flex items-center justify-center mb-4">
@@ -160,7 +155,7 @@ const founders = [
               target="_blank"
               rel="noopener"
               class="mt-auto inline-flex items-center gap-2 text-sm font-medium text-navy no-underline hover:text-orange transition-colors"
-              aria-label={`LinkedIn — ${f.name}`}
+              aria-label={`LinkedIn: ${f.name}`}
             >
               <Icon name="lucide:linkedin" class="w-4 h-4" />
               LinkedIn
