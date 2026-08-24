@@ -26,7 +26,7 @@ const futureIdeas = [
 ---
 <BaseLayout
   title="Proiecte — Build 4 Paws"
-  description="Proiectele pe care le construim acum și cele aflate în explorare. Transparent prin default."
+  description="Sterilizări Gratuite e live. Proiectele pe care le construim acum și direcțiile pe care le explorăm."
 >
   <!-- Hero -->
   <Section tone="navy" class="!pt-28 md:!pt-36 !pb-20">
@@ -44,12 +44,18 @@ const futureIdeas = [
     </Container>
   </Section>
 
-  <!-- Proiecte active / în explorare -->
+  <!-- Proiect live -->
   <Section tone="default">
     <Container>
-      <div class="mb-12">
-        <p class="text-orange font-medium mb-4 uppercase tracking-wider text-sm">În explorare</p>
-        <h2 class="text-h2">Sterilizare Gratuită</h2>
+      <div class="mb-12 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+        <div>
+          <p class="text-orange font-medium mb-4 uppercase tracking-wider text-sm">Live</p>
+          <h2 class="text-h2">Sterilizări Gratuite</h2>
+        </div>
+        <Button href="https://sterilizari-gratuite.ro" target="_blank" rel="noopener" variant="secondary">
+          sterilizari-gratuite.ro
+          <Icon name="lucide:external-link" class="w-5 h-5" />
+        </Button>
       </div>
 
       <Card class="!p-0 overflow-hidden">
@@ -58,20 +64,25 @@ const futureIdeas = [
             <div>
               <span class="inline-flex items-center gap-2 text-xs uppercase tracking-wider text-orange font-medium mb-6">
                 <span class="w-2 h-2 rounded-full bg-orange animate-pulse"></span>
-                Status: Research în teren
+                Status: Live din august 2026
               </span>
               <p class="text-slate-300 leading-relaxed mb-6">
-                Quick win care demonstrează competență și atrage partenerii de care avem nevoie pentru proiectele mari.
+                Primul nostru produs în mâinile oamenilor. Un singur loc unde campaniile de sterilizare
+                gratuită se publică, se găsesc și ajung la cei care le așteaptă.
               </p>
             </div>
             <dl class="space-y-4 pt-6 border-t border-white/10 text-sm">
               <div>
                 <dt class="text-orange uppercase tracking-wider text-xs mb-1">Piloni atinși</dt>
-                <dd class="text-slate-300">ONG-uri · Cetățeni · Veterinari</dd>
+                <dd class="text-slate-300">ONG-uri · Primării · Cetățeni</dd>
               </div>
               <div>
                 <dt class="text-orange uppercase tracking-wider text-xs mb-1">Faza curentă</dt>
-                <dd class="text-slate-300">Interviuri cu ONG-uri care organizează campanii</dd>
+                <dd class="text-slate-300">Primele campanii publicate. Creștem baza de abonați localitate cu localitate.</dd>
+              </div>
+              <div>
+                <dt class="text-orange uppercase tracking-wider text-xs mb-1">Stack</dt>
+                <dd class="text-slate-300">Nuxt · AWS Lambda · DynamoDB</dd>
               </div>
             </dl>
           </div>
@@ -86,7 +97,7 @@ const futureIdeas = [
                 Zeci de ONG-uri și primării din România organizează campanii de sterilizare gratuite,
                 fiecare pe canalele ei. Informația se publică pe Facebook, într-un grup,
                 pe un site local — și dispare în 48 de ore.
-                Iubitorii de animale nu știu când și unde are loc următoarea campanie în orașul lor.
+                Oamenii nu află la timp că a fost o campanie în localitatea lor.
                 Se pierd mii de sterilizări potențiale pe an.
               </p>
             </div>
@@ -94,25 +105,33 @@ const futureIdeas = [
             <div>
               <h3 class="text-h4 mb-3 flex items-center gap-2">
                 <Icon name="lucide:lightbulb" class="w-5 h-5 text-orange" />
-                Abordare
+                Cum funcționează
               </h3>
               <p class="text-slate-600 leading-relaxed mb-4">
-                Un agregator central unde ONG-urile și primăriile publică campaniile o singură dată,
-                iar cetățenii se abonează la notificări pentru orașul lor.
-                Fără autentificare complicată. Fără app de instalat.
+                Cetățenii se înscriu pentru localitatea lor. Organizatorii publică o campanie o singură dată.
+                Când campania e aprobată, toți cei înscriși din localitate primesc SMS sau email.
+                Fără cont. Fără aplicație de instalat.
               </p>
               <ul class="space-y-2 text-slate-600">
                 <li class="flex items-start gap-3">
                   <Icon name="lucide:check" class="w-5 h-5 text-success mt-0.5 shrink-0" />
-                  <span>Căutare după oraș și dată</span>
+                  <span>Notificări SMS/email strict pentru localitatea ta, când apare o campanie nouă</span>
                 </li>
                 <li class="flex items-start gap-3">
                   <Icon name="lucide:check" class="w-5 h-5 text-success mt-0.5 shrink-0" />
-                  <span>Notificări email/SMS când apare o campanie nouă în zonă</span>
+                  <span>Formular pentru ONG-uri și primării, cu verificare manuală înainte de publicare</span>
                 </li>
                 <li class="flex items-start gap-3">
                   <Icon name="lucide:check" class="w-5 h-5 text-success mt-0.5 shrink-0" />
-                  <span>Panou simplu pentru ONG-uri să publice în 30 de secunde</span>
+                  <span>Lista campaniilor active și hartă pe județe și localități</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <Icon name="lucide:check" class="w-5 h-5 text-success mt-0.5 shrink-0" />
+                  <span>Organizatorul marchează „Locuri ocupate" când se umplu, dintr-un link primit pe email</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <Icon name="lucide:check" class="w-5 h-5 text-success mt-0.5 shrink-0" />
+                  <span>Ghid despre sterilizare, scris pentru oameni, nu pentru medici</span>
                 </li>
               </ul>
             </div>
@@ -123,13 +142,19 @@ const futureIdeas = [
                 Cum ajuți
               </h3>
               <p class="text-slate-600 leading-relaxed mb-4">
-                Dacă organizezi campanii de sterilizare sau ai acces la date despre ele, scrie-ne.
-                Avem nevoie de perspectiva din teren înainte să scriem prima linie de cod.
+                Organizezi campanii de sterilizare? Publică-le pe platformă — durează câteva minute.
+                Ai animale sau vecini cu animale? Înscrie-te și dă mai departe în grupul localității tale.
               </p>
-              <Button href="/contact" variant="primary">
-                Vreau să ajut
-                <Icon name="lucide:arrow-right" class="w-5 h-5" />
-              </Button>
+              <div class="flex flex-wrap gap-4">
+                <Button href="https://sterilizari-gratuite.ro/organizatori" target="_blank" rel="noopener" variant="primary">
+                  Publică o campanie
+                  <Icon name="lucide:arrow-right" class="w-5 h-5" />
+                </Button>
+                <Button href="https://sterilizari-gratuite.ro" target="_blank" rel="noopener" variant="ghost">
+                  Înscrie-te pentru notificări
+                  <Icon name="lucide:bell" class="w-5 h-5" />
+                </Button>
+              </div>
             </div>
           </div>
         </div>
